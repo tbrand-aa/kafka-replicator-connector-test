@@ -1,0 +1,13 @@
+{
+    "name": "test",
+    "config": {
+        "connector.class": "io.confluent.connect.replicator.ReplicatorSourceConnector",
+        "topic.whitelist": "feedbacknow",
+        "src.kafka.bootstrap.servers":"broker-1:29092", 
+        "src.kafka.client.id":"replicator-connector",
+        "dest.kafka.bootstrap.servers": "broker-2:29092",
+        "dest.kafka.client.id": "replicator-connector",
+        "confluent.topic.bootstrap.servers": "broker-2:29092",
+        "confluent.topic.replication.factor": 1
+    }
+}
